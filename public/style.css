@@ -1,0 +1,70 @@
+body{
+    margin-left: 2rem;
+    background-color: black;
+    width: 100%;
+   
+}
+h3{
+    color: #fff;
+}
+.btns{
+    display:flex;
+    justify-self: start;
+}
+/* .note{
+    width: 100%;
+    background-color: #343131;
+    color: #fff;
+    padding: 2rem;
+    margin:2rem;
+    border-radius: 2rem;
+    /* display :inline-block; */
+ 
+ */
+
+
+/* Navbar Style  */
+.nav {
+    height: 5rem;
+    background-color: #fff !important;
+}
+
+.fa-brain{
+    font-size: 2rem;
+}
+.nav-link {
+    color:#222 !important;
+    font-size: 1.5rem !important;
+}
+
+.navbar{
+    background-color: white !important;
+}
+
+
+/* main content style  */
+.container2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex:1 1 50% ;
+    margin: 1rem !important;
+    padding: 1rem !important;
+}
+
+.card .note-actions {
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .note-actions {
+  display: flex;
+  opacity: 1;
+}
+.note-actions {
+  opacity: 0;
+}
+.card:hover .note-actions {
+  opacity: 1;
+}

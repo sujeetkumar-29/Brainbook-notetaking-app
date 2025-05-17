@@ -1,0 +1,22 @@
+<% layout("layouts/boilerplate.ejs"); %>
+<div class="row mt-3">
+    <div class="col-8 offset-2">
+        <h2>Signup on BrainBook</h2>
+        <form action="/signup" method="post" class="needs-validation" novalidate>
+            <div>
+                <label for="username" class="form-label">Username</label>
+                <input  name="username" id="title" class="form-control" required> <br> 
+                </div>
+            <div>
+                <label for="email" class="form-label">Email</label>
+                <input  name="email" id="email" class="form-control" required> <br> 
+                </div>
+            <div>
+                <label for="password" class="form-label">Password</label>
+                <input  name="password" id="password" class="form-control" type="password" required> <br> 
+                </div>
+
+                <button class="btn btn-success">Signup</button>
+        </form>
+    </div>
+</div>

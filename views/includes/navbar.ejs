@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light border-bottom shadow-sm sticky-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="/notes">
+      <i class="fa-solid fa-brain fa-lg text-primary"></i>
+      <span class="fw-bold text-primary">BrainBook</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav me-auto">
+        <a class="nav-link" href="/notes">Home</a>
+        <a class="nav-link" href="/notes/new">Add Note</a>
+      </div>
+
+      <div class="navbar-nav">
+        <% if (!currUser) { %>
+          <a class="nav-link" href="/signup"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+          <a class="nav-link" href="/login"><i class="fa-solid fa-right-to-bracket"></i> Log In</a>
+        <% } else { %>
+          <a class="nav-link" href="/logout"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+  
+</nav>
